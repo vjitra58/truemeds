@@ -99,3 +99,96 @@
     text-align: center;
     font-style: italic;
 }
+
+.doctor-right div:first-child div:last-child{
+    
+}
+
+@media screen and (max-width: 768px){
+    .doctor-container{
+        padding-left: 0rem;
+        flex-flow: column nowrap;
+        margin: 1rem 0px;
+    }
+    .doctor-left{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items:center;
+    }
+        .doctor-left>h2 {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    
+        .doctor-left>p {
+            font-size: 12px;
+        }
+    
+        .doctor-button-container {
+            display: flex;
+            -moz-box-pack: center;
+            justify-content: center;
+        }
+    
+        .doctor-button-container>button {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+    
+        .doctor-button-container>button:hover {
+            cursor: pointer;
+        }
+    
+        .doctor-right {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            transition: scroll-behavior 1s ease 0s;
+            scrollbar-width: none;
+        }
+    
+        .doctor-card {
+            min-width: 175px;
+            width: 175px;
+        }
+    
+        .doctor-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    
+        /* this is the comment */
+        .doctor-card>span[class="name"] {
+            margin-top: 1rem;
+        }
+    
+        .doctor-card>span[class="education"] {
+            width: 50%;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    
+        .doctor-card>span[class="mantra"] {
+            -moz-box-flex: 1;
+            flex-grow: 1;
+            margin-top: 1rem;
+            text-align: center;
+            font-style: italic;
+        }
+}
